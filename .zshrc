@@ -130,3 +130,7 @@ if ! zgen saved; then
     zgen oh-my-zsh themes/gentoo
     zgen save
 fi
+
+fpath=($fpath "/home/eltonplima/.zfunctions")
+autoload -U promptinit; promptinit
+prompt spaceship
