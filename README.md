@@ -33,3 +33,11 @@ source "${HOME}/.zgen/zgen.zsh"
 ### emoji
 
 sudo pacman -Sy noto-fonts-emoji
+
+## Arch
+
+Remove a package and all dependencies.
+
+```bash
+pacman -Runs gnome
+```
