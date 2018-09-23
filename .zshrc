@@ -113,6 +113,7 @@ if ! zgen saved; then
     zgen load zsh-users/zsh-autosuggestions
     zgen load chrissicool/zsh-256color
     zgen load sobolevn/wakatime-zsh-plugin
+    zgen load denysdovhan/spaceship-prompt spaceship
 
     zgen oh-my-zsh plugins/sudo
     zgen oh-my-zsh plugins/z
