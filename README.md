@@ -29,3 +29,7 @@ source "${HOME}/.zgen/zgen.zsh"
 ```
 
 [spaceship prompt](https://github.com/denysdovhan/spaceship-prompt)
+
+### emoji
+
+sudo pacman -Sy noto-fonts-emoji
