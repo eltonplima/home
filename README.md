@@ -20,4 +20,12 @@ CTRL + ALT + SysRQ r e i s u b
 
 ## Shell
 
+### install zgen
+
+```bash
+git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
+# edit .zshrc to load zgen
+source "${HOME}/.zgen/zgen.zsh"
+```
+
 [spaceship prompt](https://github.com/denysdovhan/spaceship-prompt)
