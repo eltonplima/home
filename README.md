@@ -17,3 +17,7 @@ When the system is very slow or not responding use the following key combination
 # Maintain the CTRL + ALT + SysRQ pressed
 CTRL + ALT + SysRQ r e i s u b
 ```
+
+## Shell
+
+[spaceship prompt](https://github.com/denysdovhan/spaceship-prompt)
