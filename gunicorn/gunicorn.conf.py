@@ -14,3 +14,4 @@ loglevel = 'debug'
 accesslog = 'gunicorn.access'
 errorlog = 'gunicorn.error'
 timeout = 120
+worker_class = 'meinheld.gmeinheld.MeinheldWorker'
