@@ -47,3 +47,5 @@ Remove a package and all dependencies.
 ```bash
 pacman -Runs gnome
 ```
+## Tools
+* [gitmoji](https://github.com/carloscuesta/gitmoji-cli)
