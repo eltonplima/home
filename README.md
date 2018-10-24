@@ -10,7 +10,8 @@ docker exec -e COLUMNS="`tput cols`" -e LINES="`tput lines`" -ti container bash
 ### Build from git repository
 
 ```
-#                                                                                 #branch:directory of Dockerfile
+# https://docs.docker.com/engine/reference/commandline/build/#git-repositories
+#                                                                                 #branch(default: master):directory of Dockerfile
 docker build -t apachepulsar/pulsar-dashboard https://github.com/apache/pulsar.git#master:dashboard
 ```
 
