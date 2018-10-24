@@ -1,0 +1,23 @@
+version: "3"
+services:
+  dashboard:
+    image: apachepulsar/pulsar-dashboard
+    build: https://github.com/apache/pulsar.git#master:dashboard
+    ports:
+      - "8000:80"
+    environment:
+      - SERVICE_URL=http://pulsar:8080/
+    links:
+      - pulsar
+  pulsar:
+    image: apachepulsar/pulsar:2.0.1-incubating 
+    ports:
+      - "6650:6650"
+      - "8080:8080"
+    volumes:
+      - pulsar_data:/pulsar/data
+    command: bin/pulsar standalone
+
+volumes:
+  pulsar_data:
+#  pulsar_postgres_data:
