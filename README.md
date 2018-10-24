@@ -7,6 +7,12 @@ Increase docker constainer shell columns [link](https://github.com/moby/moby/iss
 ```bash
 docker exec -e COLUMNS="`tput cols`" -e LINES="`tput lines`" -ti container bash
 ```
+### Build from git repository
+
+```
+#                                                                                 #branch:directory of Dockerfile
+docker build -t apachepulsar/pulsar-dashboard https://github.com/apache/pulsar.git#master:dashboard
+```
 
 ## Linux
 
