@@ -57,3 +57,6 @@ pacman -Runs gnome
 ## Tools
 * [gitmoji](https://github.com/carloscuesta/gitmoji-cli)
 * [pbpst](https://github.com/HalosGhost/pbpst)
+
+## KDE 5
+* [shortcuts](https://defkey.com/kde-plasma-shortcuts)
