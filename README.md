@@ -25,6 +25,12 @@ When the system is very slow or not responding use the following key combination
 CTRL + ALT + SysRQ r e i s u b
 ```
 
+Find all hosts online on network:
+
+```
+sudo arp-scan --interface=eth0 --localnet
+```
+
 ## Shell
 
 ### install zgen
