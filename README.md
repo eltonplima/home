@@ -53,6 +53,13 @@ Ubuntu
 
 https://launchpad.net/~ubuntu-desktop/+archive/ubuntu/transitions/+files/fonts-noto-color-emoji_0~20170913-0ubuntu1~bionic1_all.deb?_ga=2.144106620.812436444.1537798894-1076452805.1537798894
 
+## Git
+
+Remove remote tag
+```
+git push --delete origin tagname
+```
+
 ## Arch
 
 Remove a package and all dependencies.
