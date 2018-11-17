@@ -60,6 +60,12 @@ Remove remote tag
 git push --delete origin tagname
 ```
 
+Remove local tag
+
+```
+git tag --delete tagname
+```
+
 ## Arch
 
 Remove a package and all dependencies.
