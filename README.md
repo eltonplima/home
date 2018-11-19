@@ -7,6 +7,24 @@ Increase docker constainer shell columns [link](https://github.com/moby/moby/iss
 ```bash
 docker exec -e COLUMNS="`tput cols`" -e LINES="`tput lines`" -ti container bash
 ```
+
+### Open the docker daemon to the network
+
+/etc/default/docker
+```
+DOCKER_OPTS="--dns 1.1.1.1 --dns 8.8.4.4 -H 0.0.0.0:2375 -H unix:///var/run/docker.sock"
+```
+
+/lib/systemd/system/docker.service
+```
+EnvironmentFile=/etc/default/docker
+ExecStart=/usr/bin/dockerd $DOCKER_OPTS
+```
+
+```
+sudo systemctl daemon-reload && sudo systemctl restart docker.service
+```
+
 ### Build from git repository
 
 ```
