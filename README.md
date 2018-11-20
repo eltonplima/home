@@ -47,7 +47,7 @@ ImportError: cannot import name 'main'
 To solve this problem execute:
 
 ```
-hash -d pip3
+RUN bash -c "hash -d pip3"
 ```
 
 You can found more details about the problem and the solution [here](https://stackoverflow.com/questions/49836676/error-after-upgrading-pip-cannot-import-name-main).
