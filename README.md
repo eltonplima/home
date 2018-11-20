@@ -33,6 +33,25 @@ sudo systemctl daemon-reload && sudo systemctl restart docker.service
 docker build -t apachepulsar/pulsar-dashboard https://github.com/apache/pulsar.git#master:dashboard
 ```
 
+### Solve the pip bug on Ubuntu 18.04
+
+After running `pip3 install -U pip` the pip breaks with the following error:
+
+```
+Traceback (most recent call last):
+  File "/usr/bin/pip3", line 9, in <module>
+    from pip import main
+ImportError: cannot import name 'main'
+```
+
+To solve this problem execute:
+
+```
+hash -d pip3
+```
+
+You can found more details about the problem and the solution [here](https://stackoverflow.com/questions/49836676/error-after-upgrading-pip-cannot-import-name-main).
+
 ## Linux
 
 When the system is very slow or not responding use the following key combinations:
