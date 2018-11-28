@@ -8,6 +8,12 @@ Increase docker constainer shell columns [link](https://github.com/moby/moby/iss
 docker exec -e COLUMNS="`tput cols`" -e LINES="`tput lines`" -ti container bash
 ```
 
+Remove all stoped containers:
+
+```bash
+docker container prune
+```
+
 ### Open the docker daemon to the network
 
 /etc/default/docker
