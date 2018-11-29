@@ -74,6 +74,12 @@ Find all hosts online on network:
 sudo arp-scan --interface=eth0 --localnet
 ```
 
+Monitoring files and running command. In this example I will run the python unittest.
+
+```
+while inotifywait -e close_write -r .; do python -m unittest discover; done
+```
+
 ## Shell
 
 ### install zgen
