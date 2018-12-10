@@ -39,6 +39,10 @@ sudo systemctl daemon-reload && sudo systemctl restart docker.service
 docker build -t apachepulsar/pulsar-dashboard https://github.com/apache/pulsar.git#master:dashboard
 ```
 
+### Tool to explore docker images
+
+https://github.com/wagoodman/dive
+
 ### Solve the pip bug on Ubuntu 18.04
 
 After running `pip3 install -U pip` the pip breaks with the following error:
