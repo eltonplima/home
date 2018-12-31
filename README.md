@@ -132,3 +132,11 @@ pacman -Runs gnome
 
 ## KDE 5
 * [shortcuts](https://defkey.com/kde-plasma-shortcuts)
+
+## Gnome 3
+
+### Disable keyboard layout switch with *ALT+Shift*
+
+```bash
+dconf write /org/gnome/desktop/input-sources/xkb-options "['grp_led:scroll']"
+```
