@@ -143,10 +143,10 @@ pacman -Runs gnome
 dconf write /org/gnome/desktop/input-sources/xkb-options "['grp_led:scroll']"
 ```
 
-## Compile python
+## Compile python, erlang
 
 ### Dependencies(Ubuntu)
 
 ```
-sudo apt-get install build-essential libbz2-dev libsqlite3-dev libreadline-dev libssl-dev libffi-dev libc6-dev zlib1g-dev
+sudo apt-get install build-essential libbz2-dev libsqlite3-dev libreadline-dev libssl-dev libffi-dev libc6-dev zlib1g-dev automake autoconf libncurses5-dev
 ```
