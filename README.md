@@ -164,3 +164,7 @@ unixodbc-dev libwxgtk3.0-dev libxslt1-dev xsltproc fop libxml2-utils
 ```
 systemctl status snap.docker.dockerd.service
 ```
+## Load test tools
+
+* [hey](https://github.com/rakyll/hey)
+* [siege](https://github.com/JoeDog/siege)
