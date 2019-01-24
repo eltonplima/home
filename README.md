@@ -156,3 +156,11 @@ unixodbc-dev libwxgtk3.0-dev libxslt1-dev xsltproc fop libxml2-utils
 ## httpie
 
 [cheatsheet](https://devhints.io/httpie)
+
+## Minikube
+
+### How to manage using systemctl
+
+```
+systemctl status snap.docker.dockerd.service
+```
