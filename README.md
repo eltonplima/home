@@ -119,6 +119,25 @@ Remove local tag
 git tag --delete tagname
 ```
 
+Create commit message template
+
+```
+git config --global commit.template ~/.gitmessage
+
+echo > ~/.gitmessage << EOF
+# [Add/Fix/Remove/Update/Refactor/Document] [summary]
+
+
+# Why is it necessary? (Bug fix, feature, improvements?)
+-
+# How does the change address the issue? 
+-
+# What side effects does this change have?
+-
+# Include a link to the ticket, if any.
+EOF
+```
+
 ## Arch
 
 Remove a package and all dependencies.
