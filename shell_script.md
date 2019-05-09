@@ -1,9 +1,39 @@
 # Very simple benchmark for web applications
 
+## Parameters:
+
+1 - server address
+
+2 - times to repeat the test(**default: 10**)
+
+3 - time(in seconds) to run each test(**default: 2**)
+
+## Example
+
+With default parameters
+
+```bash
+benchmark http://localhost:8000/
+```
+
+Repeat the tests 5 times
+
+```bash
+benchmark http://localhost:8000/ 5
+```
+
+Repeat the tests 5 times and run each test for 10 seconds
+
+```bash
+benchmark http://localhost:8000/ 5 10
+```
+
+## Function code
+
 ```bash
 function benchmark() {
   address=${1}
-  repeat=${2}
+  repeat=${2:10}
   run_benchmark_step_for=${3:-2}
   export sum=0;
   export total=0;
