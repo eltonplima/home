@@ -300,3 +300,6 @@ if [[ ! -z "$QUICKSTART_KIT_REFRESH_IN_DAYS" ]]; then
 fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+$HOME/.asdf/asdf.sh
+$HOME/.asdf/completions/asdf.bash
