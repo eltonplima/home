@@ -138,6 +138,13 @@ echo > ~/.gitmessage << EOF
 EOF
 ```
 
+Partial stage new file
+
+```
+git add -N <file>
+git add -p <file>
+```
+
 ## Arch
 
 Remove a package and all dependencies.
