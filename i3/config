@@ -192,4 +192,10 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+# Autolock screen after X minutes
+exec xautolock -time 10 -locker lock 
+
+# Bind to lock screen
+bindsym $mod+Control+l exec /bin/lock 
+
 for_window [title="Android Emulator - Nexus_5X_API_29_x86:5554"] floating enable
