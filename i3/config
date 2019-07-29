@@ -202,6 +202,7 @@ exec xautolock -time 10 -locker lock
 # convert /tmp/screenshot.png -blur 0x5 /tmp/screenshotblur.png
 # i3lock -i /tmp/screenshotblur.png
 # And set execution permission: chmod +x ~/.local/bin/lock
+# Install the following packages: i3lock scrot imagemagick xautolock
 bindsym $mod+Control+l exec lock 
 
 for_window [title="Android Emulator - Nexus_5X_API_29_x86:5554"] floating enable
