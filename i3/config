@@ -205,4 +205,9 @@ exec xautolock -time 10 -locker lock
 # Install the following packages: i3lock scrot imagemagick xautolock
 bindsym $mod+Control+l exec lock 
 
+#interactive screenshot by pressing printscreen
+bindsym Print exec gnome-screenshot -i
+#crop-area screenshot by pressing Mod + printscreen
+bindsym $mod+Print exec gnome-screenshot -a
+
 for_window [title="Android Emulator - Nexus_5X_API_29_x86:5554"] floating enable
