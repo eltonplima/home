@@ -1,4 +1,4 @@
-# My tips and custom environment configurations
+# My tips and dot files
 
 ## Docker
 
