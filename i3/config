@@ -198,3 +198,9 @@ bindsym Print exec gnome-screenshot -i
 bindsym $mod+Print exec gnome-screenshot -a
 
 for_window [title="Android Emulator - Nexus_5X_API_29_x86:5554"] floating enable
+
+# auto screenlock
+exec xautolock -time 10 -locker lock
+
+# shortcut to screenlock
+bindsym $mod+Control+l exec lock
