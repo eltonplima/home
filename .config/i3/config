@@ -200,17 +200,26 @@ bindsym $mod+Print exec gnome-screenshot -a
 
 for_window [title="Android Emulator - Nexus_5X_API_29_x86:5554"] floating enable
 
-# auto screenlock
-exec xautolock -time 10 -locker lock
-
 # shortcut to screenlock
 bindsym $mod+Control+l exec lock
 bindsym $mod+m exec i3-input -F 'rename workspace to "%s"' -P 'New     name: '                                                            
 bindsym $mod+w [title="(?i)Mozilla Firefox"] focus
-exec i3-msg border normal 0
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
+
 # Multi monitor config
 bindsym $mod+Control+1 exec xrandr --output LVDS1 --auto
 bindsym $mod+Control+2 exec xrandr --output VGA1 --auto --same-as LVDS1
+
+##############################################################################
+# Autostart
+##############################################################################
+exec setxkbmap -layout us -variant dvorak-intl
+exec firefox
+exec --no-startup-id nitrogen --restore
+popup_during_fullscreen smart
+exec i3-msg border normal 0
+
+# auto screenlock
+exec xautolock -time 10 -locker lock
 
