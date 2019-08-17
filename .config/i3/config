@@ -207,4 +207,6 @@ bindsym $mod+Control+l exec lock
 bindsym $mod+m exec i3-input -F 'rename workspace to "%s"' -P 'New     name: '                                                            
 bindsym $mod+w [title="(?i)Mozilla Firefox"] focus
 exec i3-msg border normal 0
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
 
