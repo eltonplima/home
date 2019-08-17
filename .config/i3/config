@@ -209,4 +209,7 @@ bindsym $mod+w [title="(?i)Mozilla Firefox"] focus
 exec i3-msg border normal 0
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
+# Multi monitor config
+bindsym $mod+Control+1 exec xrandr --output LVDS1 --auto
+bindsym $mod+Control+2 exec xrandr --output VGA1 --auto --same-as LVDS1
 
