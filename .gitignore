@@ -1,0 +1,9 @@
+*
+
+!.profile
+!.vimrc
+!.config/i3*
+!.local/bin/lock
+!.zshrc
+!.zgen-local-plugins
+!.gitignore
