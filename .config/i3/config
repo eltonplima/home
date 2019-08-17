@@ -172,7 +172,6 @@ bar {
     tray_output primary
 }
 
-exec setxkbmap -layout us -variant dvorak-intl
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
@@ -221,4 +220,16 @@ exec i3-msg border normal 0
 
 # auto screenlock
 exec xautolock -time 10 -locker lock
+
+##############################################################################
+# Specifc window configurations
+##############################################################################
+
+# Firefox
+assign [title="(?i)Mozilla Firefox"] $ws_www 
+
+# jetbrains pycharm
+for_window [class="java-lang-Thread"] floating enable
+assign [class="jetbrains-pycharm"] $ws_code1 
+assign [class="java-lang-Thread"] $ws_code1 
 
