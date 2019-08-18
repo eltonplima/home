@@ -614,4 +614,4 @@ else
   let g:airline_symbols.linenr = ''
 endif
 set rnu
-map <leader>+dcb
+
