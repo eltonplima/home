@@ -26,4 +26,4 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 export TERMINAL=/usr/bin/konsole
-export TERM=/usr/bin/konsole
+export TERM=konsole
