@@ -202,7 +202,7 @@ for_window [title="Android Emulator - Nexus_5X_API_29_x86:5554"] floating enable
 
 # shortcut to screenlock
 bindsym $mod+Control+l exec lock
-bindsym $mod+m exec i3-input -F 'rename workspace to "%s"' -P 'New     name: '                                                            
+bindsym $mod+m exec i3-input -F 'rename workspace to "%s"' -P 'New     name: '
 bindsym $mod+w [title="(?i)Mozilla Firefox"] focus
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
@@ -228,14 +228,13 @@ exec xautolock -time 10 -locker lock
 ##############################################################################
 
 # Firefox
-assign [title="(?i)Mozilla Firefox"] $ws_www 
+assign [title="(?i)Mozilla Firefox"] $ws_www
 
 # jetbrains pycharm
 for_window [class="java-lang-Thread"] floating enable
-assign [class="jetbrains-pycharm"] $ws_code1 
-assign [class="java-lang-Thread"] $ws_code1 
-assign [title="(?i)slack.*"] $ws_comm1 
+assign [class="jetbrains-pycharm"] $ws_code1
+assign [class="java-lang-Thread"] $ws_code1
+assign [title="(?i)slack.*"] $ws_comm1
 
 # Postman
-assign [title="(?i)Postman"] $ws_postman 
-
+assign [title="(?i)Postman"] $ws_postman
