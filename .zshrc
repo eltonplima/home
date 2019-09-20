@@ -301,5 +301,5 @@ fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-$HOME/.asdf/asdf.sh
-$HOME/.asdf/completions/asdf.bash
+. ${HOME}/.asdf/asdf.sh
+. ${HOME}/.asdf/completions/asdf.bash
