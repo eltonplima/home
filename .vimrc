@@ -46,6 +46,21 @@ Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 Plug 'docker/docker'
 Plug 'kevinhui/vim-docker-tools'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neomake/neomake'
+Plug 'c-brenn/phoenix.vim'
+Plug 'tpope/vim-projectionist'
+Plug 'slashmili/alchemist.vim'
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
+let g:deoplete#enable_at_startup = 1
+let g:alchemist_tag_disable = 1
+autocmd! BufWritePost * Neomake
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -174,6 +189,8 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+set path+=**
+set wildmenu
 
 set fileformats=unix,dos,mac
 
