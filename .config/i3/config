@@ -223,6 +223,7 @@ exec i3-msg border normal 0
 # auto screenlock
 exec xautolock -time 10 -locker lock
 
+exec flameshot
 ##############################################################################
 # Specifc window configurations
 ##############################################################################
