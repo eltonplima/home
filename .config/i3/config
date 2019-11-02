@@ -220,7 +220,8 @@ bindsym $mod+Control+2 exec xrandr --output VGA1 --auto --same-as LVDS1
 # Autostart
 ##############################################################################
 #exec setxkbmap -layout us -variant dvorak-intl
-exec setxkbmap -layout br -variant abnt2 -model abnt2
+#exec setxkbmap -layout br -variant abnt2 -model abnt2
+exec setxkbmap -layout us -variant intl
 exec firefox
 exec --no-startup-id nitrogen --restore
 popup_during_fullscreen smart
