@@ -7,3 +7,5 @@
 !.zshrc
 !.zgen-local-plugins
 !.gitignore
+!.config/redshift/redshift.conf
+
