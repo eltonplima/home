@@ -246,3 +246,8 @@ assign [title="(?i)slack.*"] $ws_comm1
 
 # Postman
 assign [title="(?i)Postman"] $ws_postman
+
+# autostart redshift
+exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
+exec --no-startup-id redshift-gtk
+
