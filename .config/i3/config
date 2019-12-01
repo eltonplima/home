@@ -223,7 +223,7 @@ bindsym $mod+Control+2 exec xrandr --output VGA1 --auto --same-as LVDS1
 #exec setxkbmap -layout br -variant abnt2 -model abnt2
 exec setxkbmap -layout us -variant intl
 exec firefox
-exec --no-startup-id nitrogen --restore
+#exec --no-startup-id nitrogen --restore
 popup_during_fullscreen smart
 exec i3-msg border normal 0
 
@@ -248,6 +248,13 @@ assign [title="(?i)slack.*"] $ws_comm1
 assign [title="(?i)Postman"] $ws_postman
 
 # autostart redshift
-exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
-exec --no-startup-id redshift-gtk
+#exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
+#exec --no-startup-id redshift-gtk
 
+# gnome integration
+# Install gnome-flashback and follow instructions on: https://github.com/i3-gnome/i3-gnome
+exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
+exec_always --no-startup-id gnome-power-manager
+exec --no-startup-id nm-applet
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id gnome-flashback
