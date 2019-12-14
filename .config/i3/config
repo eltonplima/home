@@ -186,8 +186,8 @@ bindsym XF86AudioLowerVolume exec amixer -q set Master 10- unmute #decrease soun
 bindsym XF86AudioMute exec amixer -D pulse set Master 1+ toggle # mute sound
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec echo $(( $(cat /sys/class/backlight/intel_backlight/brightness)+3000 )) > /sys/class/backlight/intel_backlight/brightness
+bindsym XF86MonBrightnessDown exec echo $(( $(cat /sys/class/backlight/intel_backlight/brightness)-3000 )) > /sys/class/backlight/intel_backlight/brightness 
 
 # Touchpad controls
 #bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
