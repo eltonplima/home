@@ -223,6 +223,7 @@ bindsym $mod+Control+2 exec xrandr --output VGA1 --auto --same-as LVDS1
 #exec setxkbmap -layout br -variant abnt2 -model abnt2
 exec setxkbmap -layout us -variant intl
 exec firefox
+exec --no-startup-id /usr/bin/blueman-applet  # Bluetooth Manager
 #exec --no-startup-id nitrogen --restore
 popup_during_fullscreen smart
 exec i3-msg border normal 0
@@ -248,6 +249,8 @@ assign [title="(?i)slack.*"] $ws_comm1
 # Postman
 assign [title="(?i)Postman"] $ws_postman
 
+for_window [class="Blueman-manager"] floating enable
+for_window [class="Blueman-services"] floating enable
 # autostart redshift
 #exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 #exec --no-startup-id redshift-gtk
