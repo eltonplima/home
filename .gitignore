@@ -4,7 +4,7 @@
 !.vimrc
 !.config/i3*
 !.local/bin/lock
-!.zshrc
+!.zshrc.d/999-asdf
 !.zgen-local-plugins
 !.gitignore
 !.config/redshift/redshift.conf
