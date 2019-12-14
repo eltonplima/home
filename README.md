@@ -2,7 +2,7 @@
 
 ## Pre restore
 ```bash
-sudo apt install zsh fonts-firacode stow python3-psutil xautolock dmenu i3-wm i3lock-fancy i3status 
+sudo apt install zsh fonts-firacode fonts-font-awesome stow python3-psutil xautolock dmenu i3-wm i3lock-fancy i3status 
 chsh -s /bin/zsh
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.5
 asdf plugin-add nodejs
