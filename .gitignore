@@ -9,3 +9,6 @@
 !.gitignore
 !.config/redshift/redshift.conf
 
+/.blackbox/pubring.gpg~
+/.blackbox/pubring.kbx~
+/.blackbox/secring.gpg
