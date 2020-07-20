@@ -43,7 +43,7 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 zgen load unixorn/autoupdate-zgen
 
 # Add my random utility functions
-zgen load unixorn/jpb.zshplugin
+#zgen load unixorn/jpb.zshplugin
 
 # Colorize the things if you have grc installed. Well, some of the
 # things, anyway.
@@ -52,7 +52,7 @@ zgen load unixorn/warhol.plugin.zsh
 # OS X helpers. This plugin is smart enough to detect when it isn't running
 # on OS X and not load itself, so you can safely share the same plugin list
 # across OS X and Linux/BSD
-zgen load unixorn/tumult.plugin.zsh
+#zgen load unixorn/tumult.plugin.zsh
 
 # Warn you when you run a command that you've set an alias for
 zgen load djui/alias-tips
@@ -77,14 +77,14 @@ zgen load StackExchange/blackbox
 zgen oh-my-zsh plugins/pip
 zgen oh-my-zsh plugins/sudo
 zgen oh-my-zsh plugins/aws
-zgen oh-my-zsh plugins/chruby
+#zgen oh-my-zsh plugins/chruby
 zgen oh-my-zsh plugins/colored-man-pages
 zgen oh-my-zsh plugins/git
 zgen oh-my-zsh plugins/github
 zgen oh-my-zsh plugins/python
 zgen oh-my-zsh plugins/rsync
 zgen oh-my-zsh plugins/screen
-zgen oh-my-zsh plugins/vagrant
+#zgen oh-my-zsh plugins/vagrant
 
 if [ $(uname -a | grep -ci Darwin) = 1 ]; then
   # Load OSX-specific plugins
