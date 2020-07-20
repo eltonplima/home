@@ -3,6 +3,7 @@
 !.profile
 !.vimrc
 !.config/i3*
+!.config/regolith/*
 !.local/bin/lock
 !.zshrc.d/999-asdf
 !.zgen-local-plugins
