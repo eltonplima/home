@@ -7,7 +7,8 @@
 set $mod Mod4
 set $alt Mod1
 set $builtin_monitor "DP-4"
-set $external_monitor "DP-0"
+#set $external_monitor "DP-0"
+set $external_monitor "HDMI-0"
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -352,12 +353,13 @@ exec nm-applet
 
 assign [class="jetbrains-pycharm"] $ws2
 assign [class="Microsoft Teams - Preview"] $ws6
+assign [title="Desktop"] $ws10
 assign [class="PulseUi"] $ws7
 
 exec --no-startup-id i3-msg "exec firefox"
 exec --no-startup-id i3-msg "exec pycharm-professional"
 
-exec --no-startup-id /usr/bin/deepin-terminal
-for_window [class="Deepin-terminal"] move scratchpad
-#for_window [class="deepin-terminal"] floating enable; move scratchpad; scratchpad show;
+exec --no-startup-id /usr/bin/gnome-terminal
+for_window [class="Gnome-terminal"] move scratchpad
+for_window [class="Peek"] floating enable
 
