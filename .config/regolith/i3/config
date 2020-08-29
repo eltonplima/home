@@ -360,6 +360,6 @@ exec --no-startup-id i3-msg "exec firefox"
 exec --no-startup-id i3-msg "exec pycharm-professional"
 
 exec --no-startup-id /usr/bin/gnome-terminal
-for_window [class="Gnome-terminal"] move scratchpad
+#for_window [class="Gnome-terminal"] move scratchpad
 for_window [class="Peek"] floating enable
 
