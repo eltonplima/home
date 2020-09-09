@@ -19,6 +19,7 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
+set $terminal_path "/usr/bin/gnome-terminal"
 
 # Color values are defined in ~/.Xresources-regolith
 # These are the labels which define each i3 workspace.
@@ -359,7 +360,7 @@ assign [class="PulseUi"] $ws7
 exec --no-startup-id i3-msg "exec firefox"
 exec --no-startup-id i3-msg "exec pycharm-professional"
 
-exec --no-startup-id /usr/bin/gnome-terminal
+exec --no-startup-id $terminal_path
 #for_window [class="Gnome-terminal"] move scratchpad
 for_window [class="Peek"] floating enable
 
