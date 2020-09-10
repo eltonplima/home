@@ -67,6 +67,9 @@ bindsym $mod+Shift+Return exec /usr/bin/firefox
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# focus on parent
+bindsym $mod+a focus parent 
+
 set_from_resource $rofiTheme rofi.theme "regolith-theme"
 
 # rofi app and window launchers
