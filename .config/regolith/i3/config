@@ -7,8 +7,8 @@
 set $mod Mod4
 set $alt Mod1
 set $builtin_monitor "DP-4"
-#set $external_monitor "DP-0"
-set $external_monitor "HDMI-0"
+set $external_monitor "DP-0"
+#set $external_monitor "HDMI-0"
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -19,7 +19,7 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
-set $terminal_path "/usr/bin/gnome-terminal"
+set $terminal_path "/usr/bin/konsole"
 
 # Color values are defined in ~/.Xresources-regolith
 # These are the labels which define each i3 workspace.
@@ -359,6 +359,7 @@ assign [class="jetbrains-pycharm"] $ws2
 assign [class="Microsoft Teams - Preview"] $ws6
 assign [title="Desktop"] $ws10
 assign [class="PulseUi"] $ws7
+assign [class="Steam"] $ws5
 
 exec --no-startup-id i3-msg "exec firefox"
 exec --no-startup-id i3-msg "exec pycharm-professional"
