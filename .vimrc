@@ -46,10 +46,15 @@ Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 Plug 'docker/docker'
 Plug 'kevinhui/vim-docker-tools'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'amiralies/coc-elixir', {'do': 'yarn install && yarn prepack'}
 Plug 'neomake/neomake'
 Plug 'c-brenn/phoenix.vim'
 Plug 'tpope/vim-projectionist'
 Plug 'slashmili/alchemist.vim'
+Plug 'mhinz/vim-mix-format'
+Plug 'vim-test/vim-test'
+Plug 'kassio/neoterm'
+let test#strategy = "neoterm"
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
@@ -97,7 +102,11 @@ Plug 'ludwig/split-manpage.vim'
 " elixir
 Plug 'elixir-lang/vim-elixir'
 Plug 'carlosgaldino/elixir-snippets'
-
+nmap <silent> t<C-n> :TestNearest<CR>
+nmap <silent> t<C-f> :TestFile<CR>
+nmap <silent> t<C-s> :TestSuite<CR>
+nmap <silent> t<C-l> :TestLast<CR>
+nmap <silent> t<C-g> :TestVisit<CR>
 
 " elm
 "" Elm Bundle
@@ -267,7 +276,7 @@ set title
 set titleold="Terminal"
 set titlestring=%F
 
-set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
+set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ %{FugitiveStatusline()}(line\ %l\/%L,\ col\ %c)\
 
 " Search mappings: These will make it so that going to the next one in a
 " search will center on the line it's found in.
@@ -505,7 +514,11 @@ autocmd FileType cpp setlocal tabstop=4 shiftwidth=4 expandtab
 
 
 " elixir
-
+let g:mix_format_on_save = 1
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gr <Plug>(coc-references)
+nnoremap <silent> <leader>co  :<C-u>CocList outline<CR>
 
 " elm
 " elm-vim
