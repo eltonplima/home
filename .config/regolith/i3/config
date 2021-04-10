@@ -7,7 +7,8 @@
 set $mod Mod4
 set $alt Mod1
 set $builtin_monitor "DP-4"
-set $external_monitor "DP-0"
+set $external_monitor "DP-5"
+#set $external_monitor "DP-0"
 #set $external_monitor "HDMI-0"
 set $ws1 "1"
 set $ws2 "2"
@@ -198,8 +199,8 @@ bindsym $mod+Shift+n exec nautilus
 bindsym $mod+n exec /usr/share/rofication/rofication-gui.py
 
 # i3-snapshot for load/save current layout
-#bindsym $mod+comma  exec /usr/bin/i3-snapshot -o > /tmp/i3-snapshot 
-#bindsym $mod+period exec /usr/bin/i3-snapshot -c < /tmp/i3-snapshot
+#bindsym $mod+comma  exec /usr/bin/i3-snapshot -o > ~/.i3-snapshot 
+#bindsym $mod+period exec /usr/bin/i3-snapshot -c < ~/.i3-snapshot
 
 # Toggle bar visibility
 bindsym $mod+i bar mode toggle
@@ -356,6 +357,7 @@ exec --no-startup-id /usr/bin/unclutter -b
 exec nm-applet
 
 assign [class="jetbrains-pycharm"] $ws2
+assign [class="jetbrains-idea"] $ws2
 assign [class="Microsoft Teams - Preview"] $ws6
 assign [title="Desktop"] $ws10
 assign [class="PulseUi"] $ws7
