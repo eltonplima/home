@@ -29,3 +29,4 @@ export TERMINAL=/usr/bin/konsole
 export TERM=konsole
 
 . $HOME/.asdf/asdf.sh
+export GPG_TTY=$(tty)
