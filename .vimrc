@@ -54,6 +54,9 @@ Plug 'slashmili/alchemist.vim'
 Plug 'mhinz/vim-mix-format'
 Plug 'vim-test/vim-test'
 Plug 'kassio/neoterm'
+Plug 'aklt/plantuml-syntax'
+Plug 'tyru/open-browser.vim'
+Plug 'weirongxu/plantuml-previewer.vim'
 let test#strategy = "neoterm"
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
