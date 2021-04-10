@@ -57,6 +57,7 @@ Plug 'kassio/neoterm'
 Plug 'aklt/plantuml-syntax'
 Plug 'tyru/open-browser.vim'
 Plug 'weirongxu/plantuml-previewer.vim'
+Plug 'Chiel92/vim-autoformat'
 let test#strategy = "neoterm"
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -68,6 +69,9 @@ endif
 
 let g:deoplete#enable_at_startup = 1
 let g:alchemist_tag_disable = 1
+let g:formatterpath = ['/home/eltonplima/.asdf/shims/']
+"" Enable autoformat on save
+au BufWrite * :Autoformat
 autocmd! BufWritePost * Neomake
 
 if isdirectory('/usr/local/opt/fzf')

@@ -122,5 +122,7 @@ zgen load supercrabtree/k
 # Bullet train prompt setup
 zgen load caiogondim/bullet-train-oh-my-zsh-theme bullet-train
 
+zgen load romkatv/powerlevel10k powerlevel10k
+
 # Save it all to init script
 zgen save
