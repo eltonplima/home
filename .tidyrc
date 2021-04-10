@@ -1,6 +1,0 @@
-write-back: yes
-indent: yes
-quiet: yes
-repeated-attributes: keep-last
-indent-spaces: 2
-
