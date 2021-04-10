@@ -3,12 +3,13 @@
 !.profile
 !.vimrc
 !.config/i3*
-!.config/regolith/*
+!.config/regolith/**/*
 !.local/bin/lock
 !.zshrc.d/999-asdf
 !.zgen-local-plugins
 !.gitignore
 !.config/redshift/redshift.conf
+!.tidyrc
 
 /.blackbox/pubring.gpg~
 /.blackbox/pubring.kbx~
