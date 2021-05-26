@@ -326,7 +326,7 @@ bar {
   #font $i3-wm.bar.font
   font pango:Inconsolata 12
   #separator_symbol "|"
-  status_command ~/.config/bumblebee-status/bumblebee-status -m git docker_ps load cpu memory pasink pasource battery datetime \
+  status_command ~/.config/bumblebee-status/bumblebee-status -m docker_ps load cpu memory pasink pasource battery datetime \
       -p datetime.format="%Y-%m-%d %H:%M" \
       -t dracula-powerline
   tray_output primary
