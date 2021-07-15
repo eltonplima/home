@@ -1,1 +1,11 @@
 i3-wm.bar.position: top
+i3-wm.workspace.auto_back_and_forth: yes
+i3-wm.bar.workspace.focused.background.color: #ffff00
+i3-wm.bar.workspace.focused.text.color: #000000
+i3-wm.window.border.size: 2
+i3-wm.client.focused.color.background:  #3D3D3D
+i3-wm.client.focused.color.text:        #FFFFFF
+i3-wm.client.unfocused.color.background:        #5D5D5D
+i3-wm.client.unfocused.color.text:      #878787
+i3-wm.gaps.inner.size: 2
+
