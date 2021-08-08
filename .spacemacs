@@ -93,6 +93,7 @@ This function should only modify configuration layer settings."
      emacs-lisp
      csv
      graphviz
+     json
      )
 
    ;; List of additional packages that will be installed without being wrapped
