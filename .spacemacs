@@ -103,6 +103,8 @@ This function should only modify configuration layer settings."
      sql
      django
      phoenix
+     (javascript variables:
+                 javascript-import-tool 'import-js)
      )
 
    ;; List of additional packages that will be installed without being wrapped
