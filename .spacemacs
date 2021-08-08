@@ -101,6 +101,7 @@ This function should only modify configuration layer settings."
                org-plantuml-jar-path "~/Downloads/plantuml.jar")
      shell-scripts
      sql
+     django
      )
 
    ;; List of additional packages that will be installed without being wrapped
