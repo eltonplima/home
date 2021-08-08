@@ -71,7 +71,12 @@ This function should only modify configuration layer settings."
              elixir-ls-path "/home/eltonplima/develop/language_server/elixir")
      erlang
      (docker :variables docker-dockerfile-backend 'lsp)
-     html
+     (html :variables
+           css-enable-lsp t
+           less-enable-lsp t
+           scss-enable-lsp t
+           html-enable-lsp t
+           web-fmt-tool 'prettier)
      ansible
      )
 
