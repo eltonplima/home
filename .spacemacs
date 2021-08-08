@@ -79,6 +79,9 @@ This function should only modify configuration layer settings."
            web-fmt-tool 'prettier)
      ansible
      prettier
+     (colors :variables
+             colors-colorize-identifiers 'all
+             colors-enable-rainbow-mode t)
      )
 
 
