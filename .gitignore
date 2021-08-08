@@ -10,6 +10,7 @@
 !.gitignore
 !.config/redshift/redshift.conf
 !.tidyrc
+!.spacemacs
 
 /.blackbox/pubring.gpg~
 /.blackbox/pubring.kbx~
