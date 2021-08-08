@@ -96,6 +96,9 @@ This function should only modify configuration layer settings."
      json
      markdown
      parinfer
+     (plantuml :variables
+               plantuml-jar-path "~/Downloads/plantuml.jar"
+               org-plantuml-jar-path "~/Downloads/plantuml.jar")
      )
 
    ;; List of additional packages that will be installed without being wrapped
