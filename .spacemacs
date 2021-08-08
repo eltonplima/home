@@ -94,6 +94,7 @@ This function should only modify configuration layer settings."
      csv
      graphviz
      json
+     markdown
      )
 
    ;; List of additional packages that will be installed without being wrapped
