@@ -107,6 +107,7 @@ This function should only modify configuration layer settings."
                  javascript-import-tool 'import-js)
      (c-c++ :variables
             c-c++-backend 'lsp-clangd)
+     chrome
      )
 
    ;; List of additional packages that will be installed without being wrapped
