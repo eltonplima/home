@@ -88,6 +88,7 @@ This function should only modify configuration layer settings."
                     unicode-fonts-enable-ligatures t)
      games
      xkcd
+     spacemacs-defaults
      )
 
    ;; List of additional packages that will be installed without being wrapped
