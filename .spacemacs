@@ -89,6 +89,7 @@ This function should only modify configuration layer settings."
      games
      xkcd
      spacemacs-defaults
+     spacemacs-project
      )
 
    ;; List of additional packages that will be installed without being wrapped
