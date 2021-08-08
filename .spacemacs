@@ -90,6 +90,7 @@ This function should only modify configuration layer settings."
      xkcd
      spacemacs-defaults
      spacemacs-project
+     emacs-lisp
      )
 
    ;; List of additional packages that will be installed without being wrapped
