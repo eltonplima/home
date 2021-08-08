@@ -105,6 +105,8 @@ This function should only modify configuration layer settings."
      phoenix
      (javascript variables:
                  javascript-import-tool 'import-js)
+     (c-c++ :variables
+            c-c++-backend 'lsp-clangd)
      )
 
    ;; List of additional packages that will be installed without being wrapped
