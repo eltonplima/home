@@ -107,8 +107,9 @@ This function should only modify configuration layer settings."
                  javascript-import-tool 'import-js)
      (c-c++ :variables
             c-c++-backend 'lsp-clangd)
-     chrome
-     )
+     (chrome :variables
+             chrome-exec-path "~/.local/share/flatpak/app/org.chromium.Chromium/current/active/files/bin/chromium"))
+     
 
    ;; List of additional packages that will be installed without being wrapped
    ;; in a layer (generally the packages are installed only and should still be
