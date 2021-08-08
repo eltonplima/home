@@ -92,6 +92,7 @@ This function should only modify configuration layer settings."
      spacemacs-project
      emacs-lisp
      csv
+     graphviz
      )
 
    ;; List of additional packages that will be installed without being wrapped
