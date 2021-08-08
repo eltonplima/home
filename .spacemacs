@@ -99,6 +99,7 @@ This function should only modify configuration layer settings."
      (plantuml :variables
                plantuml-jar-path "~/Downloads/plantuml.jar"
                org-plantuml-jar-path "~/Downloads/plantuml.jar")
+     shell-scripts
      )
 
    ;; List of additional packages that will be installed without being wrapped
