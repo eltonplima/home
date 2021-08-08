@@ -102,6 +102,7 @@ This function should only modify configuration layer settings."
      shell-scripts
      sql
      django
+     phoenix
      )
 
    ;; List of additional packages that will be installed without being wrapped
