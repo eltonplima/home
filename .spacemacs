@@ -84,6 +84,8 @@ This function should only modify configuration layer settings."
                      spell-checking-enable-auto-dictionary t)
      helpful
      semantic
+     (unicode-fonts :variables
+                    unicode-fonts-enable-ligatures t)
      )
 
    ;; List of additional packages that will be installed without being wrapped
