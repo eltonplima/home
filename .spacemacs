@@ -79,8 +79,10 @@ This function should only modify configuration layer settings."
      (colors :variables
              colors-colorize-identifiers 'all
              colors-enable-rainbow-mode t)
+     (spell-checking :variables
+                     spell-checking-enable-by-default t
+                     spell-checking-enable-auto-dictionary t)
      )
-
 
    ;; List of additional packages that will be installed without being wrapped
    ;; in a layer (generally the packages are installed only and should still be
