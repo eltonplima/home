@@ -82,6 +82,7 @@ This function should only modify configuration layer settings."
      (spell-checking :variables
                      spell-checking-enable-by-default t
                      spell-checking-enable-auto-dictionary t)
+     helpful
      )
 
    ;; List of additional packages that will be installed without being wrapped
