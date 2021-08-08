@@ -87,6 +87,7 @@ This function should only modify configuration layer settings."
      (unicode-fonts :variables
                     unicode-fonts-enable-ligatures t)
      games
+     xkcd
      )
 
    ;; List of additional packages that will be installed without being wrapped
