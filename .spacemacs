@@ -78,6 +78,7 @@ This function should only modify configuration layer settings."
            html-enable-lsp t
            web-fmt-tool 'prettier)
      ansible
+     prettier
      )
 
 
