@@ -32,49 +32,70 @@ This function should only modify configuration layer settings."
 
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(html
-     yaml
-     (python :variables
-             python-backend 'anaconda
-             python-formatter 'black
-             python-format-on-save t)
-     ;; ---------------------------------------------------------------
-     ;; Example of useful layers you may want to use right away.
-     ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
-     ;; `M-m f e R' (Emacs style) to install them.
-     ;; ----------------------------------------------------------------
-     auto-completion
-     emacs-lisp
-     helm
-     lsp
-     markdown
-     multiple-cursors
-     (shell :variables
-            shell-default-height 30
-            shell-default-position 'bottom)
-     syntax-checking
-     version-control
-     (treemacs :variables
-               treemacs-use-scope-type 'Perspectives
-               treemacs-use-git-mode 'deferred
-               treemacs-follow-mode t
-               treemacs-use-follow-mode 'tag
-               treemacs-use-filewatch-mode t)
-     git
-     themes-megapack
-     org
+   '(
+     ;; Programming Languages
      (elixir :variables
              elixir-backend 'alchemist
              elixir-ls-path "/home/eltonplima/develop/language_server/elixir")
      erlang
-     (docker :variables docker-dockerfile-backend 'lsp)
+     (python :variables
+             python-backend 'anaconda
+             python-formatter 'black
+             python-format-on-save t)
+     emacs-lisp
+     shell-scripts
+     sql
+     (c-c++ :variables
+            c-c++-backend 'lsp-clangd)
+     (javascript variables:
+                 javascript-import-tool 'import-js)
+     (shell :variables
+            shell-default-height 30
+            shell-default-position 'bottom)
+
+     ;; Frameworks
+     django
+     phoenix
+
+     ;; Domain Specific Languages
      (html :variables
            css-enable-lsp t
            less-enable-lsp t
            scss-enable-lsp t
            html-enable-lsp t
            web-fmt-tool 'prettier)
+     yaml
+     markdown
+     csv
+     json
+     (plantuml :variables
+      plantuml-jar-path "~/Downloads/plantuml.jar"
+      org-plantuml-jar-path "~/Downloads/plantuml.jar")
+
+     ;; Tools
+     (docker :variables docker-dockerfile-backend 'lsp)
      ansible
+     version-control
+     git
+     org
+     (chrome :variables
+             chrome-exec-path "~/.local/share/flatpak/app/org.chromium.Chromium/current/active/files/bin/chromium")
+
+     ;; Spacemacs specifics
+     spacemacs-defaults
+     spacemacs-project
+     auto-completion
+     helm
+     lsp
+     multiple-cursors
+     syntax-checking
+     (treemacs :variables
+               treemacs-use-scope-type 'Perspectives
+               treemacs-use-git-mode 'deferred
+               treemacs-follow-mode t
+               treemacs-use-follow-mode 'tag
+               treemacs-use-filewatch-mode t)
+     themes-megapack
      prettier
      (colors :variables
              colors-colorize-identifiers 'all
@@ -86,30 +107,12 @@ This function should only modify configuration layer settings."
      semantic
      (unicode-fonts :variables
                     unicode-fonts-enable-ligatures t)
+     parinfer
+
+     ;; Fun and games
      games
      xkcd
-     spacemacs-defaults
-     spacemacs-project
-     emacs-lisp
-     csv
-     graphviz
-     json
-     markdown
-     parinfer
-     (plantuml :variables
-               plantuml-jar-path "~/Downloads/plantuml.jar"
-               org-plantuml-jar-path "~/Downloads/plantuml.jar")
-     shell-scripts
-     sql
-     django
-     phoenix
-     (javascript variables:
-                 javascript-import-tool 'import-js)
-     (c-c++ :variables
-            c-c++-backend 'lsp-clangd)
-     (chrome :variables
-             chrome-exec-path "~/.local/share/flatpak/app/org.chromium.Chromium/current/active/files/bin/chromium"))
-     
+     graphviz)
 
    ;; List of additional packages that will be installed without being wrapped
    ;; in a layer (generally the packages are installed only and should still be
