@@ -36,7 +36,7 @@ This function should only modify configuration layer settings."
      ;; Programming Languages
      (elixir :variables
              elixir-backend 'alchemist
-             elixir-ls-path "/home/eltonplima/develop/language_server/elixir")
+             elixir-ls-path "~/develop/language_server/elixir")
      erlang
      (python :variables
              python-backend 'anaconda
