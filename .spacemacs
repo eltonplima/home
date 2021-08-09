@@ -75,6 +75,9 @@ This function should only modify configuration layer settings."
      ;; Tools
      (docker :variables docker-dockerfile-backend 'lsp)
      ansible
+     (terraform :variables
+                terraform-auto-format-on-save t
+                terraform-backend 'lsp)
      (version-control :variables
                       version-control-diff-side 'left)
      git
