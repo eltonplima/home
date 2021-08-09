@@ -75,7 +75,8 @@ This function should only modify configuration layer settings."
      ;; Tools
      (docker :variables docker-dockerfile-backend 'lsp)
      ansible
-     version-control
+     (version-control :variables
+                      version-control-diff-side 'left)
      git
      org
      (chrome :variables
