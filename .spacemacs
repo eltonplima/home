@@ -52,6 +52,7 @@ This function should only modify configuration layer settings."
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
+     asm
 
      ;; Frameworks
      django
@@ -111,7 +112,7 @@ This function should only modify configuration layer settings."
      semantic
      (unicode-fonts :variables
                     unicode-fonts-enable-ligatures t)
-     parinfer
+    ;; parinfer
 
      ;; Fun and games
      games
