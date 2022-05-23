@@ -38,15 +38,15 @@
 # Attach workspaces on a specific monitor
 ###############################################################################
 
-workspace "$ws5" output eDP-1-1
-workspace "$ws6" output eDP-1-1
-workspace "$ws7" output eDP-1-1
-workspace "$ws8" output eDP-1-1
-workspace "$ws9" output eDP-1-1
-workspace "$ws1" output DP-4
-workspace "$ws2" output DP-4
-workspace "$ws3" output DP-4
-workspace "$ws4" output DP-4
+workspace "$ws5" output eDP-1
+workspace "$ws6" output eDP-1
+workspace "$ws7" output eDP-1
+workspace "$ws8" output eDP-1
+workspace "$ws9" output eDP-1
+workspace "$ws1" output DP-1-4
+workspace "$ws2" output DP-1-4
+workspace "$ws3" output DP-1-4
+workspace "$ws4" output DP-1-4
 
 ###############################################################################
 # Key Mappings
@@ -72,16 +72,6 @@ set_from_resource $ws6  i3-wm.workspace.06.name "6"
 set_from_resource $ws7  i3-wm.workspace.07.name "7"
 set_from_resource $ws8  i3-wm.workspace.08.name "8"
 set_from_resource $ws9  i3-wm.workspace.09.name "9"
-set_from_resource $ws10 i3-wm.workspace.10.name "10"
-set_from_resource $ws11 i3-wm.workspace.11.name "11"
-set_from_resource $ws12 i3-wm.workspace.12.name "12"
-set_from_resource $ws13 i3-wm.workspace.13.name "13"
-set_from_resource $ws14 i3-wm.workspace.14.name "14"
-set_from_resource $ws15 i3-wm.workspace.15.name "15"
-set_from_resource $ws16 i3-wm.workspace.16.name "16"
-set_from_resource $ws17 i3-wm.workspace.17.name "17"
-set_from_resource $ws18 i3-wm.workspace.18.name "18"
-set_from_resource $ws19 i3-wm.workspace.19.name "19"
 
 ###############################################################################
 # Workspace Keys
@@ -111,21 +101,21 @@ bindsym $mod+$i3-wm.binding.terminal exec /usr/bin/x-terminal-emulator
 set_from_resource $i3-wm.binding.browser i3-wm.binding.browser Shift+Return
 bindsym $mod+$i3-wm.binding.browser exec gtk-launch $(xdg-settings get default-web-browser)
 
-set_from_resource $rofiTheme rofi.theme /etc/regolith/styles/lascaille/rofi.rasi
+set_from_resource $rofiTheme rofi.theme /etc/regolith/styles/pop-os/rofi.rasi
 
 ## Launch // Application // <> Space ##
 set_from_resource $i3-wm.binding.launcher.app i3-wm.binding.launcher.app space
-set_from_resource $i3-wm.program.launcher.app i3-wm.program.launcher.app rofi -show drun -theme $rofiTheme
+set_from_resource $i3-wm.program.launcher.app i3-wm.program.launcher.app rofi -show drun -show-icons -theme $rofiTheme
 bindsym $mod+$i3-wm.binding.launcher.app exec $i3-wm.program.launcher.app
 
 ## Launch // Command // <><Shift> Space ##
 set_from_resource $i3-wm.binding.launcher.cmd i3-wm.binding.launcher.cmd Shift+space
-set_from_resource $i3-wm.program.launcher.cmd i3-wm.program.launcher.cmd rofi -show run -theme $rofiTheme
+set_from_resource $i3-wm.program.launcher.cmd i3-wm.program.launcher.cmd rofi -show run -show-icons -theme $rofiTheme
 bindsym $mod+$i3-wm.binding.launcher.cmd exec $i3-wm.program.launcher.cmd
 
 ## Navigate // Window by Name // <><Ctrl> Space ##
 set_from_resource $i3-wm.binding.launcher.window i3-wm.binding.launcher.window Ctrl+space
-set_from_resource $i3-wm.program.launcher.window i3-wm.program.launcher.window rofi -show window -theme $rofiTheme
+set_from_resource $i3-wm.program.launcher.window i3-wm.program.launcher.window rofi -show window -show-icons -theme $rofiTheme
 bindsym $mod+$i3-wm.binding.launcher.window exec $i3-wm.program.launcher.window
 
 ## Launch // This Dialog // <><Shift> ? ##
@@ -422,27 +412,27 @@ bindsym $mod+$i3-wm.binding.sleep exec $i3-wm.program.sleep
 
 ## Modify // Settings // <> c ##
 set_from_resource $i3-wm.binding.settings i3-wm.binding.settings c
-set_from_resource $i3-wm.program.settings i3-wm.program.settings gnome-control-center --class=floating_window
+set_from_resource $i3-wm.program.settings i3-wm.program.settings gnome-control-center
 bindsym $mod+$i3-wm.binding.settings exec $i3-wm.program.settings
 
 ## Modify // Display Settings // <> d ##
 set_from_resource $i3-wm.binding.display i3-wm.binding.display d
-set_from_resource $i3-wm.program.display i3-wm.program.display gnome-control-center --class=floating_window display
+set_from_resource $i3-wm.program.display i3-wm.program.display gnome-control-center  display
 bindsym $mod+$i3-wm.binding.display exec $i3-wm.program.display
 
 ## Modify // Wifi Settings // <> w ##
 set_from_resource $i3-wm.binding.wifi i3-wm.binding.wifi w
-set_from_resource $i3-wm.program.wifi i3-wm.program.wifi gnome-control-center --class=floating_window wifi
+set_from_resource $i3-wm.program.wifi i3-wm.program.wifi gnome-control-center  wifi
 bindsym $mod+$i3-wm.binding.wifi exec $i3-wm.program.wifi
 
 ## Modify // Bluetooth Settings // <> b ##
 set_from_resource $i3-wm.binding.bluetooth i3-wm.binding.bluetooth b
-set_from_resource $i3-wm.program.bluetooth i3-wm.program.bluetooth gnome-control-center --class=floating_window bluetooth
+set_from_resource $i3-wm.program.bluetooth i3-wm.program.bluetooth gnome-control-center  bluetooth
 bindsym $mod+$i3-wm.binding.bluetooth exec $i3-wm.program.bluetooth
 
 ## Modify // Sound Settings // <> s ##
 set_from_resource $i3-wm.binding.sound i3-wm.binding.sound s
-set_from_resource $i3-wm.program.sound i3-wm.program.sound gnome-control-center --class=floating_window sound
+set_from_resource $i3-wm.program.sound i3-wm.program.sound gnome-control-center  sound
 bindsym $mod+$i3-wm.binding.sound exec $i3-wm.program.sound
 
 ## Launch // File Browser // <><Shift> n ##
@@ -452,7 +442,7 @@ bindsym $mod+$i3-wm.binding.files exec $i3-wm.program.files
 
 ## Launch // Notification Viewer // <> n ##
 set_from_resource $i3-wm.binding.notification_ui i3-wm.binding.notification_ui n
-set_from_resource $i3-wm.program.notification_ui i3-wm.program.notification_ui /usr/bin/rofication-gui
+set_from_resource $i3-wm.program.notification_ui i3-wm.program.notification_ui /home/eltonplima/.asdf/shims/rofication-gui
 bindsym $mod+$i3-wm.binding.notification_ui exec $i3-wm.program.notification_ui
 
 ###############################################################################
@@ -462,10 +452,10 @@ bindsym $mod+$i3-wm.binding.notification_ui exec $i3-wm.program.notification_ui
 # i3-snapshot for load/save current layout
 ## Modify // Save Window Layout // <> , ##
 set_from_resource $i3-wm.binding.save_layout i3-wm.binding.save_layout comma
-bindsym $mod+$i3-wm.binding.save_layout  exec /usr/bin/i3-snapshot -o > /tmp/i3-snapshot
+bindsym $mod+$i3-wm.binding.save_layout  exec /usr/bin/i3-snapshot -o > ~/.i3-snapshot
 ## Modify // Load Window Layout // <> . ##
 set_from_resource $i3-wm.binding.load_layout i3-wm.binding.load_layout period
-bindsym $mod+$i3-wm.binding.load_layout exec /usr/bin/i3-snapshot -c < /tmp/i3-snapshot
+bindsym $mod+$i3-wm.binding.load_layout exec /usr/bin/i3-snapshot -c < ~/.i3-snapshot
 
 # Toggle bar visibility
 ## Modify // Toggle Bar // <> i ##
@@ -656,6 +646,12 @@ bar {
 }
 
 ###############################################################################
+# Assign programs to workspace
+###############################################################################
+
+assign [class="slack"] 5
+
+###############################################################################
 # External programs launched with i3
 ###############################################################################
 
@@ -664,7 +660,7 @@ set_from_resource $i3-wm.program.compositor i3-wm.program.compositor /usr/share/
 exec_always --no-startup-id $i3-wm.program.compositor
 
 # Start Rofication for notifications
-set_from_resource $i3-wm.program.notifications i3-wm.program.notifications /usr/bin/rofication-daemon
+set_from_resource $i3-wm.program.notifications i3-wm.program.notifications /home/eltonplima/.asdf/shims/rofication-daemon
 exec --no-startup-id $i3-wm.program.notifications
 
 # Launch first time user experience script
@@ -690,6 +686,8 @@ set_from_resource $i3-wm.program.3 i3-wm.program.3 :
 exec --no-startup-id $i3-wm.program.3
 
 exec --no-startup-id i3-msg "workspace $ws1; exec /usr/bin/konsole --title scratchpad"
-exec --no-startup-id i3-msg "workspace $ws1; exec /usr/bin/firefox"
-exec --no-startup-id i3-msg "workspace $ws2; exec /snap/bin/pycharm-professional"
+exec --no-startup-id i3-msg "workspace $ws1; exec /usr/bin/google-chrome-stable"
+exec --no-startup-id i3-msg "workspace $ws1; exec /usr/bin/gnome-keyring-daemon"
+exec --no-startup-id i3-msg "workspace $ws2; exec /home/eltonplima/.local/bin/idea"
+exec --no-startup-id i3-msg "workspace $ws6; exec /usr/bin/obsidian"
 for_window [title="scratchpad"] move scratchpad
