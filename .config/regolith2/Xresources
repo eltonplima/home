@@ -1,0 +1,5 @@
+!regolith.look.path: /usr/share/regolith-look/solarized-dark
+regolith.look.path: /usr/share/regolith-look/default
+i3-wm.workspace.auto_back_and_forth: yes
+i3-wm.bar.position: top
+
